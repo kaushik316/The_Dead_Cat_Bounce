@@ -13,3 +13,6 @@ I started off by manually compiling a list of about 85 or so tickers of stocks t
 2.Change from Low: Represents the % change in the closing price to the Low for the trailing 12 months.
 3.Change from Moving Average: Represents the % change in the closing price to the 50 day moving average for the trailing 50 days.
 4.Short Ratio: (Shares sold short / Average Daily Volume for trailing 30 days)
+
+After creating a consolidated csv for all the Dead cat bounce stocks with the metrics I wanted, I went about obtaining the same metrics for stocks that had not shown dead cat bounce behavior (the negatives). I created a long ticker string of over 300 stocks and got the data from Yahoo Finance. I then combined the data to create a csv file named CONSOLIDATED_DCB_DATA.csv that contained the relevant information for both Dead Cat Bounce stocks (the first 64 or so rows) and Non Dead Cat Bounce stocks (the next 360 or so rows).
+
