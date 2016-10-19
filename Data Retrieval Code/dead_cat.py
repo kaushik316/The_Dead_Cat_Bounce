@@ -137,7 +137,7 @@ def create_stats_csv():
 		get_avgvolume(GiantDCB_df[GiantDCB_df['Ticker']==ticker])
 		shares_short = short_interestdf[short_interestdf['Ticker']==ticker].iat[0,1]
 		temp_stats_df = pd.DataFrame({'Shares_Shorted': shares_short,
-									  'Average_Volume': volume_mean,
+						  'Average_Volume': volume_mean,
 			                          'Change_from_50day_Avg(%)': change_from_50dMean,
 			                          'Change_from_Low(%)': change_from_low, 
 			                          'Change_from_High(%)': change_from_high, 
