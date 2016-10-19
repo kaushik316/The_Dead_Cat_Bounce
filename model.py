@@ -3,13 +3,10 @@ import numpy as np
 import matplotlib.pyplot as plt 
 from matplotlib import style
 import statsmodels.api as sm
-import seaborn as sb
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.tree import export_graphviz
 from os import system 
 from sklearn.cross_validation import cross_val_score
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import fbeta_score, make_scorer
 from sklearn.grid_search import GridSearchCV
 import math
 
