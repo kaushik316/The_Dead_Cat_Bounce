@@ -105,8 +105,7 @@ def get_DCBstats(df):
 	High = df.Close.max()
 	current_close = df.iat[-3,4]
 	change_from_high = (((current_close-High)/High)*100)
-	print change_from_high 
-
+	
 	Low = df.Close.min()
 	change_from_low = (((current_close-Low)/Low)*100)
 
@@ -114,7 +113,7 @@ def get_DCBstats(df):
 	fifty_day_series = fifty_daydf.Close[0:49]
 	Mean = fifty_day_series.mean()
 	change_from_50dMean = (((current_close-Mean)/Mean)*100)
-	print change_from_50dMean
+	
 
 
 # Calculate 30d average trading volume
@@ -123,7 +122,7 @@ def get_avgvolume(df):
 	vseries = df.Volume.tail(32)
 	volume_series = vseries[0:29]
 	volume_mean = volume_series.mean()
-	print volume_mean
+	
 
 
 
